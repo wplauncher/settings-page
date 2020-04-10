@@ -1,4 +1,4 @@
-# WordPress Plugin Settings Page
+# Settings Page WordPress Plugin
 
 This is a simple WordPress plugin that creates a settings page. The settings page allows WordPress admin users to add their settings for a plugin. 
 
