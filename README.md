@@ -8,7 +8,7 @@ You can use this skeleton to add a settings page to your plugin. This plugin doe
 - Saves that form to the database
 - Makes sure the settings form fields are pre-populated if it has already been filled out
 
-If you want to get step by step instructions on how to add a settings page to your WordPress plugin, check out [this post on our blog](https://blog.wplauncher.com/create-wordpress-plugin-settings-page/). The Settings Page plugin is using the [WordPress Plugin Boilerplate framework](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate) and we used [WWPB.me](https://wppb.me/) to generate a version with the settings-page namespaces.
+Check out our [blog post](https://blog.wplauncher.com/create-wordpress-plugin-settings-page/) to get step by step instructions on [how to add a settings page to your WordPress plugin](https://blog.wplauncher.com/create-wordpress-plugin-settings-page/). The Settings Page plugin is using the [WordPress Plugin Boilerplate framework](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate) and we used [WWPB.me](https://wppb.me/) to generate a version with the settings-page namespaces.
 
 ## Install the Settings Page Plugin on Your WordPress Site to See What you Get
 1. Click on the green clone or download button on this page and click Download Zip
