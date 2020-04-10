@@ -11,7 +11,7 @@ You can use this skeleton to add a settings page to your plugin. This plugin doe
 The Settings Page plugin is using the [WordPress Plugin Boilerplate framework](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate) and we used [WWPB.me](https://wppb.me/) to generate a version with the settings-page namespaces.  If you want to get step by step instructions on how to add a settings page to your WordPress plugin, check out [this post on our blog](https://blog.wplauncher.com/create-wordpress-plugin-settings-page/).
 
 ## Install the Settings Page Plugin on Your WordPress Site to See What you Get
-1. Click on the green clone or download button on this page
+1. Click on the green clone or download button on this page and click Download Zip
 2. Login to your WordPress site at www.your-wordpress-site.com/wp-login.php
 3. Hover over Plugins in the left sidebar
 4. Click on Add New
