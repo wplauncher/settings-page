@@ -1,5 +1,7 @@
 # Settings Page WordPress Plugin
 
+![Plugin Settings Form](https://blog.wplauncher.com/wp-content/uploads/2020/07/Screen-Shot-2020-07-05-at-2.41.54-PM.png)
+
 This is a simple WordPress plugin that creates a settings page. The settings page allows WordPress admin users to add their settings for a plugin. 
 
 You can use this skeleton to add a settings page to your plugin. This plugin does the following:
