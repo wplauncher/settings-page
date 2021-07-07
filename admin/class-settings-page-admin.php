@@ -218,7 +218,7 @@ class Settings_Page_Admin {
 
 					} else {
 							$checked = ($value) ? 'checked' : '';
-							echo '<input type="'.$args['subtype'].'" id="'.$args['id'].'" "'.$args['required'].'" name="'.$args['name'].'" size="40" value="1" '.$checked.' />';
+							echo '<input type="'.$args['subtype'].'" id="'.$args['id'].'" "'.$args['required'].'" name="'.$args['name'].'" value="1" '.$checked.' />';
 					}
 					break;
 			default:
