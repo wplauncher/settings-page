@@ -156,7 +156,7 @@ class Settings_Page_Admin {
 							'subtype'   => 'text',
 							'id'    => 'settings_page_example_setting',
 							'name'      => 'settings_page_example_setting',
-							'required' => 'true',
+							'required' => true,
 							'get_options_list' => '',
 							'value_type'=>'normal',
 							'wp_data' => 'option'
@@ -186,7 +186,7 @@ class Settings_Page_Admin {
 								'subtype'   => '',
 								'id'    => $this->plugin_name.'_example_setting',
 								'name'      => $this->plugin_name.'_example_setting',
-								'required' => 'required="required"',
+								'required' => true,
 								'get_option_list' => "",
 									'value_type' = serialized OR normal,
 			'wp_data'=>(option or post_meta),
@@ -202,6 +202,7 @@ class Settings_Page_Admin {
 
 			case 'input':
 					$value = ($args['value_type'] == 'serialized') ? serialize($wp_data_value) : $wp_data_value;
+					$required = $args['required'] ? ' required="required"' : '';
 					if($args['subtype'] != 'checkbox'){
 							$prependStart = (isset($args['prepend_value'])) ? '<div class="input-prepend"> <span class="add-on">'.$args['prepend_value'].'</span>' : '';
 							$prependEnd = (isset($args['prepend_value'])) ? '</div>' : '';
@@ -212,13 +213,13 @@ class Settings_Page_Admin {
 									// hide the actual input bc if it was just a disabled input the info saved in the database would be wrong - bc it would pass empty values and wipe the actual information
 									echo $prependStart.'<input type="'.$args['subtype'].'" id="'.$args['id'].'_disabled" '.$step.' '.$max.' '.$min.' name="'.$args['name'].'_disabled" size="40" disabled value="' . esc_attr($value) . '" /><input type="hidden" id="'.$args['id'].'" '.$step.' '.$max.' '.$min.' name="'.$args['name'].'" size="40" value="' . esc_attr($value) . '" />'.$prependEnd;
 							} else {
-									echo $prependStart.'<input type="'.$args['subtype'].'" id="'.$args['id'].'" "'.$args['required'].'" '.$step.' '.$max.' '.$min.' name="'.$args['name'].'" size="40" value="' . esc_attr($value) . '" />'.$prependEnd;
+									echo $prependStart.'<input type="'.$args['subtype'].'" id="'.$args['id'].'"'.$required.' '.$step.' '.$max.' '.$min.' name="'.$args['name'].'" size="40" value="' . esc_attr($value) . '" />'.$prependEnd;
 							}
 							/*<input required="required" '.$disabled.' type="number" step="any" id="'.$this->plugin_name.'_cost2" name="'.$this->plugin_name.'_cost2" value="' . esc_attr( $cost ) . '" size="25" /><input type="hidden" id="'.$this->plugin_name.'_cost" step="any" name="'.$this->plugin_name.'_cost" value="' . esc_attr( $cost ) . '" />*/
 
 					} else {
 							$checked = ($value) ? 'checked' : '';
-							echo '<input type="'.$args['subtype'].'" id="'.$args['id'].'" "'.$args['required'].'" name="'.$args['name'].'" size="40" value="1" '.$checked.' />';
+							echo '<input type="'.$args['subtype'].'" id="'.$args['id'].'"'.$required.' name="'.$args['name'].'" size="40" value="1" '.$checked.' />';
 					}
 					break;
 			default:
